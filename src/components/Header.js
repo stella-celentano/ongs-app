@@ -1,16 +1,17 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap'
+import { Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { FiLogIn } from 'react-icons/fi';
 
 import logoImg from './../assets/logo.svg';
-import loginImg from './../assets/login.svg';
 
-import  './../styles/components/header.css'
+import './../styles/components/header.css'
 
 function Header() {
 
     return (
         <Navbar bsClass="navbar" >
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="#">
                 <img
                     alt=""
                     src={logoImg}
@@ -22,7 +23,9 @@ function Header() {
             </Navbar.Brand>
             <Navbar.Collapse className="justify-content-end">
                 <Navbar.Text>
-                    <a href="#login"><img src={loginImg} alt=""/></a>
+                    <Link to="/register-animal">
+                        <FiLogIn size={20} color="black"></FiLogIn>
+                    </Link>
                 </Navbar.Text>
             </Navbar.Collapse>
         </Navbar>
