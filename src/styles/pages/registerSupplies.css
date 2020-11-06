@@ -1,0 +1,100 @@
+.register-supplies-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 1% auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-supplies-container .content {
+    width: 100%;
+    padding: 26px;
+    background: #f0f0f5;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-supplies-container .content section {
+    width: 100%;
+    max-width: 1120px;
+}
+
+.register-supplies-container .content section h1 {
+    margin: 64px 0 32px;
+    font-size: 30px;
+}
+
+.register-supplies-container .content form {
+    width: 100%;
+    max-width: 1120px;
+} 
+
+label {
+    color: black;
+    font-size: 20px;
+    margin-top: 1%;
+}
+
+.required {
+    color: red;
+}
+
+.bntSave {
+    width: 10%;
+    height: 10%;
+    background: #228B22;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    font-weight: lighter;
+    margin-top: 16px;
+    margin-left: 10px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    transition: filter 0.2s;
+}
+
+.bntSave:hover{
+    filter: brightness(90%);
+}
+
+.bntCancel {
+    width: 10%;
+    height: 10%;
+    background: #B22222;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    font-weight: lighter;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    transition: filter 0.2s;
+}
+
+.bntCancel:hover{
+    filter: brightness(90%);
+}
+
+.alignRigthBtn {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+p {
+    font-size: 12px;
+    color: red;
+}
