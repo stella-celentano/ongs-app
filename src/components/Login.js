@@ -56,7 +56,7 @@ function Login() {
                         </input>
                         <button className="button" type="submit">Entrar</button>
 
-                        <Link className="back-link" to="/register">
+                        <Link className="back-link" to="/">
                             <FiLogIn size={16} color="#E02041"></FiLogIn>
                         Não tenho cadastro
                     </Link>
