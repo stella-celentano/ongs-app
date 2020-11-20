@@ -4,7 +4,7 @@ import { FiArrowLeft } from 'react-icons/fi'
 
 import api from './../services/api';
 
-import Header from './../components/Header';
+import HeaderAdmin from './../components/HeaderAdmin';
 
 import '../styles/pages/registerSupplies.css';
 
@@ -41,7 +41,7 @@ export default function RegisterSupplies() {
 
     return (
         <div>
-            <Header />
+            <HeaderAdmin />
             <div className="register-supplies-container">
                 <div className="content">
                     <Link className="back-link" to="/">
@@ -51,7 +51,7 @@ export default function RegisterSupplies() {
                         <tbody>
                             <tr>
                                 <td>
-                                    <h1>Cadastrar Suprimentos</h1>
+                                    <h1>Cadastrar Mantimentos</h1>
                                 </td>
                             </tr>
                             <tr>

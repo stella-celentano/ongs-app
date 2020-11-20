@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi'
 
-import Header from './../components/Header';
+import HeaderAdmin from './../components/HeaderAdmin';
 
 import '../styles/pages/registerAnimal.css';
 
 export default function RegisterAnimal() {
     return (
         <div>
-            <Header />
+            <HeaderAdmin />
             <div className="register-animal-container">
                 <div className="content">
                     <Link className="back-link" to="/">
