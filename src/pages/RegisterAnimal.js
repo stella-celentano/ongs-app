@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FiArrowLeft } from 'react-icons/fi'
 
 import Header from './../components/Header';
 
@@ -10,11 +12,25 @@ export default function RegisterAnimal() {
             <Header />
             <div className="register-animal-container">
                 <div className="content">
+                    <Link className="back-link" to="/">
+                        <FiArrowLeft size={20} color="#E02041"></FiArrowLeft>
+                    </Link>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h1>Cadastrar Animal Resgatado</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Campos obrigatórios *</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <section>
                         <form >
-                            <h1>Cadastrar Animal Resgatado</h1>
-                            <p>Campos obrigatórios *</p>
-
                             <label>Nome <b className="required">*</b></label>
                             <input
                                 placeholder="Nome"
@@ -33,18 +49,6 @@ export default function RegisterAnimal() {
                                 required
                             />
 
-                            <label>Data do acolhimento <b className="required">*</b></label>
-                            <input
-                                placeholder="Data"
-                                required
-                            />
-
-                            <label>WhatsApp <b className="required">*</b></label>
-                            <input
-                                placeholder="WhatsApp"
-                                required
-                            />
-
                             <label>Imagem <b className="required">*</b></label>
                             <input
                                 placeholder="Imagem"
@@ -52,7 +56,6 @@ export default function RegisterAnimal() {
                             />
 
                             <div className="alignRigthBtn">
-                                <button className="bntCancel" type="submit">Cancelar</button>
                                 <button className="bntSave" type="submit">Salvar</button>
                             </div>
 

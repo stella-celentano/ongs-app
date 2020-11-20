@@ -1,7 +1,7 @@
 .register-supplies-container {
     width: 100%;
     max-width: 1120px;
-    height: 100vh;
+    height: 37rem;
     margin: 1% auto;
 
     display: flex;
@@ -14,10 +14,13 @@
     padding: 26px;
     background: #f0f0f5;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 1%;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    
 }
 
 .register-supplies-container .content section {
@@ -25,9 +28,15 @@
     max-width: 1120px;
 }
 
-.register-supplies-container .content section h1 {
-    margin: 64px 0 32px;
-    font-size: 30px;
+.register-supplies-container .content h1 {
+    margin: 25px 0 32px;
+    font-size: 35px;
+    color: black;
+}
+
+.register-supplies-container .content p {
+    font-size: 12px;
+    color: #E02041;
 }
 
 .register-supplies-container .content form {
@@ -35,20 +44,24 @@
     max-width: 1120px;
 } 
 
-label {
+.register-supplies-container .content form label {
     color: black;
     font-size: 20px;
     margin-top: 1%;
 }
 
-.required {
-    color: red;
+.register-supplies-container .content .back-link {
+    margin-top: -30%;
+}
+
+.register-supplies-container .content .required {
+    color: #E02041;
 }
 
 .bntSave {
     width: 10%;
-    height: 10%;
-    background: #228B22;
+    line-height: 200%;
+    background: #10a010;
     border: 0;
     border-radius: 8px;
     color: white;
@@ -58,33 +71,12 @@ label {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
+    font-size: 15px;
+    font-weight: 600;
     transition: filter 0.2s;
 }
 
 .bntSave:hover{
-    filter: brightness(90%);
-}
-
-.bntCancel {
-    width: 10%;
-    height: 10%;
-    background: #B22222;
-    border: 0;
-    border-radius: 8px;
-    color: white;
-    font-weight: lighter;
-    margin-top: 16px;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    transition: filter 0.2s;
-}
-
-.bntCancel:hover{
     filter: brightness(90%);
 }
 
@@ -94,7 +86,3 @@ label {
     justify-content: right;
 }
 
-p {
-    font-size: 12px;
-    color: red;
-}

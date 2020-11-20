@@ -10,8 +10,8 @@ import './../styles/components/header.css'
 function Header() {
 
     return (
-        <Navbar bsClass="navbar" >
-            <Navbar.Brand href="#">
+        <Navbar bsclass="navbar" >
+            <Navbar.Brand href="/">
                 <img
                     alt=""
                     src={logoImg}

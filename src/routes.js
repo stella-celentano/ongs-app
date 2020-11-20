@@ -4,7 +4,6 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Login from './components/Login';
 import ManageProfile from './components/ManageProfile';
 
-import Login from './components/Login';
 import RegisterAnimal from './pages/RegisterAnimal';
 import RegisterSupplies from './pages/RegisterSupplies';
 
