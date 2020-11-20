@@ -23,7 +23,7 @@ function Header() {
             </Navbar.Brand>
             <Navbar.Collapse className="justify-content-end">
                 <Navbar.Text>
-                    <Link to="/register-animal">
+                    <Link to="/">
                         <FiLogIn size={20} color="black"></FiLogIn>
                     </Link>
                 </Navbar.Text>
