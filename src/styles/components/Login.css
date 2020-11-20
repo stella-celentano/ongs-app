@@ -42,3 +42,7 @@ form h1 {
 .logon-container img {
     size: 25vh;
 }
+
+.logon-container section.form input {
+    margin-top: 5%;
+}

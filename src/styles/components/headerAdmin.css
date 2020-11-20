@@ -6,3 +6,7 @@
 .align-top {
     margin-top: -2%;
 }
+
+.navbar .textLink {
+    font-size: 18px;
+}
