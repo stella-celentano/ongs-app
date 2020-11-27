@@ -56,52 +56,8 @@
     color: #E02041;
 }
 
-.bntSave {
-    width: 10%;
-    height: 10%;
-    background: #228B22;
-    border: 0;
-    border-radius: 8px;
-    color: white;
-    font-weight: lighter;
-    margin-top: 16px;
-    margin-left: 10px;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    transition: filter 0.2s;
-}
-
-.bntSave:hover{
-    filter: brightness(90%);
-}
-
-.bntCancel {
-    width: 10%;
-    height: 10%;
-    background: #B22222;
-    border: 0;
-    border-radius: 8px;
-    color: white;
-    font-weight: lighter;
-    margin-top: 16px;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    transition: filter 0.2s;
-}
-
-.bntCancel:hover{
-    filter: brightness(90%);
-}
-
 .alignRigthBtn {
     display: flex;
-    align-items: right;
-    justify-content: right;
+    margin-left: 90.7%;
 }
 

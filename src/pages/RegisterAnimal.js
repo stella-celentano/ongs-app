@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiArrowLeft } from 'react-icons/fi'
+import { FiArrowLeft } from 'react-icons/fi';
+import Button from 'react-bootstrap/Button';
 
 import HeaderAdmin from './../components/HeaderAdmin';
 
@@ -36,30 +37,24 @@ export default function RegisterAnimal() {
                                 placeholder="Nome"
                                 required
                             />
-
                             <label>Porte <b className="required">*</b></label>
                             <input
                                 placeholder="Porte"
                                 required
                             />
-
                             <label>Comportamento <b className="required">*</b></label>
                             <input
                                 placeholder="Comportamento"
                                 required
                             />
-
                             <label>Imagem <b className="required">*</b></label>
                             <input
                                 placeholder="Imagem"
                                 required
                             />
-
                             <div className="alignRigthBtn">
-                                <button className="bntSave" type="submit">Salvar</button>
+                                <Button type="submit" variant="success">Salvar</Button>{' '}
                             </div>
-
-
                         </form>
                     </section>
                 </div>
