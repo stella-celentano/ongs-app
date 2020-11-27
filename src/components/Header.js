@@ -7,7 +7,7 @@ import logoImg from './../assets/logo.svg';
 
 import './../styles/components/header.css'
 
-function Header() {
+export default function Header() {
 
     return (
         <Navbar bsclass="navbar" >
@@ -31,5 +31,3 @@ function Header() {
         </Navbar>
     );
 }
-
-export default Header;

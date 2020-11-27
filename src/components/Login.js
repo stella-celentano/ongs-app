@@ -24,7 +24,7 @@ function Login() {
             localStorage.setItem('loginId', response.data.id_cliente);
             localStorage.setItem('userName', response.data.nome);
 
-            history.push('/');
+            history.push('/profile');
         } catch (err) {
             alert('Falha no login, tente novamente!');
         }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { FiArrowLeft } from 'react-icons/fi'
+import { FiArrowLeft } from 'react-icons/fi';
+import Button from 'react-bootstrap/Button';
 
 import api from './../services/api';
 
@@ -32,7 +33,7 @@ export default function RegisterSupplies() {
                     ongid: loginId
                 }
             })
-
+            history.push('/list-supplies');
         } catch (err) {
             console.log(data)
             alert('Erro ao cadastrar mantimento, tente novamente!');
@@ -44,7 +45,7 @@ export default function RegisterSupplies() {
             <HeaderAdmin />
             <div className="register-supplies-container">
                 <div className="content">
-                    <Link className="back-link" to="/">
+                    <Link className="back-link" to="/list-supplies">
                         <FiArrowLeft size={20} color="#E02041"></FiArrowLeft>
                     </Link>
                     <table>
@@ -86,7 +87,7 @@ export default function RegisterSupplies() {
                                 onChange={e => setValorTotal(e.target.value)}
                             />
                             <div className="alignRigthBtn">
-                                <button className="bntSave" type="submit">Salvar</button>
+                                <Button type="submit" variant="success">Salvar</Button>{' '}
                             </div>
                         </form>
                     </section>
