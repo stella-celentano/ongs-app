@@ -1,0 +1,15 @@
+.container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 1% auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alignRigthBtn {
+    display: flex;
+    margin-top: 1%;
+    margin-right: 9.5%;
+}
