@@ -1,16 +1,14 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
-import { FiLogIn } from 'react-icons/fi';
 import { Button, Card, Badge, Accordion, Table, Form, Row, Col } from 'react-bootstrap';
 
 import '../styles/components/ManageProfile.css';
 
-import Header from './Header';
+import HeaderAdmin from './../components/HeaderAdmin';
 
-function ManageProfile() {
+export default function ManageProfile() {
     return (
         <div>
-            <Header></Header>
+            <HeaderAdmin />
             <div className="logon-container">
                 <Card style={{ width: '35rem' }}>
                     <Card.Img style={{ width: '10rem' }} className="profileImage" variant="top" src="https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg" />
@@ -110,5 +108,3 @@ function ManageProfile() {
         </div>
     )
 }
-
-export default ManageProfile;

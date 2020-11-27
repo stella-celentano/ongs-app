@@ -5,10 +5,8 @@ import Routes from './routes';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/global.css';
 
-function App() {
+export default function App() {
   return (
     <Routes />
   );
 }
-
-export default App;

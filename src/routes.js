@@ -5,18 +5,20 @@ import Login from './components/Login';
 import ManageProfile from './components/ManageProfile';
 
 import RegisterAnimal from './pages/RegisterAnimal';
-import RegisterSupplies from './pages/RegisterSupplies';
 
-function Routes(){
-    return(
+import RegisterSupplies from './pages/RegisterSupplies';
+import ListSupplies from './pages/ListSupplies';
+
+export default function Routes() {
+    return (
         <BrowserRouter>
             <Route path="/" exact component={Login} />
             <Route path="/profile" component={ManageProfile} />
 
             <Route path="/register-animal" component={RegisterAnimal} />
+
             <Route path="/register-supplies" component={RegisterSupplies} />
+            <Route path="/list-supplies" component={ListSupplies} />
         </BrowserRouter>
     );
 }
-
-export default Routes;

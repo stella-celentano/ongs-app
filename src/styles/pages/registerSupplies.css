@@ -56,31 +56,8 @@
     color: #E02041;
 }
 
-.bntSave {
-    width: 10%;
-    line-height: 200%;
-    background: #10a010;
-    border: 0;
-    border-radius: 8px;
-    color: white;
-    font-weight: lighter;
-    margin-top: 16px;
-    margin-left: 10px;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-    transition: filter 0.2s;
-}
-
-.bntSave:hover{
-    filter: brightness(90%);
-}
-
-.alignRigthBtn {
+.register-supplies-container .content .alignRigthBtn {
     display: flex;
-    align-items: right;
-    justify-content: right;
+    margin-left: 100%;
 }
 
