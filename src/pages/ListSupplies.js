@@ -60,10 +60,10 @@ export default function ListSupplies() {
                                 <td>{supplie.id}</td>
                                 <td>{supplie.nomeItem}</td>
                                 <td>{supplie.quantidade}</td>
-                                <td>{supplie.valorTotal}</td>
+                                <td>R$ {supplie.valorTotal}</td>
                                 <td>
                                     <Button onClick={() => handleDeleteSupplie(supplie.id)} type="button" size="sm" variant="outline-danger"><b>Excluir</b></Button> {' '}
-                                    <Button href="/edit-supplies" size="sm" variant="outline-warning"><b>Editar</b></Button>
+                                    <Button href={`/update-supplie/${supplie.id}`} size="sm" variant="outline-warning"><b>Editar</b></Button>
                                 </td>
                             </tr>
                         </tbody>

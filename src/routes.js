@@ -8,6 +8,7 @@ import RegisterAnimal from './pages/RegisterAnimal';
 
 import RegisterSupplies from './pages/RegisterSupplies';
 import ListSupplies from './pages/ListSupplies';
+import UpdateSupplie from './pages/UpdateSupplie';
 
 export default function Routes() {
     return (
@@ -19,6 +20,7 @@ export default function Routes() {
 
             <Route path="/register-supplies" component={RegisterSupplies} />
             <Route path="/list-supplies" component={ListSupplies} />
+            <Route path="/update-supplie/:id" component={UpdateSupplie} />
         </BrowserRouter>
     );
 }
