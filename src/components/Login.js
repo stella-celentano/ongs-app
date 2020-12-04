@@ -6,7 +6,7 @@ import Header from '../components/Header';
 
 import api from '../services/api';
 
-import '../styles/components/Login.css';
+import '../styles/global.css';
 
 import ongImg from '../assets/loginImage.svg';
 
@@ -56,9 +56,13 @@ function Login() {
                         </input>
                         <button className="button" type="submit">Entrar</button>
 
-                        <Link className="back-link" to="/">
+                        <Link className="back-link" to="/Register">
                             <FiLogIn size={16} color="#E02041"></FiLogIn>
                         Não tenho cadastro
+                    </Link>
+                        <Link className="back-link" to="/Menu">
+                            <FiLogIn size={16} color="#E02041"></FiLogIn>
+                        Menu
                     </Link>
                     </form>
                 </section>
