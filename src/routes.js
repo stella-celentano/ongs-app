@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-import Login from './pages/Login';
-import ManageProfile from './pages/ManageProfile';
+import Login from './components/Login';
+import ManageProfile from './components/ManageProfile';
 
 import RegisterAnimal from './pages/RegisterAnimal';
 
-import Register from './pages/Register'
-import PagInicial from './pages/PagInicial'
+import Register from './components/Register'
+import PagInicial from './components/PagInicial'
 
 import RegisterSupplies from './pages/RegisterSupplies';
 import ListSupplies from './pages/ListSupplies';
