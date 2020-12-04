@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FiArrowLeft } from 'react-icons/fi';
 
 import api from './../services/api';
+
 import Header from '../components/Header';
+
 import '../styles/global.css';
 import ongImg from '../assets/loginImage.svg';
 
@@ -44,6 +48,10 @@ function Register() {
             <Header></Header>
             <div className="logon-container">
                 <section className="form">
+                    <br/>
+                    <Link className="back-link" to="/">
+                        <FiArrowLeft size={20} color="#E02041"></FiArrowLeft>
+                    </Link>
                     <form onSubimit={handleNewOng}>
                         <h1>Sua Ong não está cadastrada?</h1>
 
@@ -105,7 +113,6 @@ function Register() {
                         </input>
 
                         <button className="button" type="submit">Cadastrar</button>
-
                     </form>
                 </section>
                 <img src={ongImg} alt="ong controll"></img>
