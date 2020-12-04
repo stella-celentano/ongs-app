@@ -57,7 +57,10 @@
 }
 
 .register-supplies-container .content .alignRigthBtn {
+    margin: 1% auto;
+
     display: flex;
-    margin-left: 100%;
+    justify-content: end;
+    margin-right: 9.5%;
 }
 

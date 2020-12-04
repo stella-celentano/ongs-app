@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { FiLogIn } from 'react-icons/fi';
+import { FiLogIn, FiArrowLeft } from 'react-icons/fi';
 
 import Header from '../components/Header';
 
@@ -34,6 +34,9 @@ function Login() {
             <Header></Header>
             <div className="logon-container">
                 <section className="form">
+                    <Link className="back-link" to="/">
+                        <FiArrowLeft size={20} color="#E02041"></FiArrowLeft>
+                    </Link>
                     <form onSubmit={handleLogin}>
                         <h1>Fazer Login</h1>
 
@@ -56,14 +59,10 @@ function Login() {
                         </input>
                         <button className="button" type="submit">Entrar</button>
 
-                        <Link className="back-link" to="/Register">
+                        <Link className="back-link" to="/register">
                             <FiLogIn size={16} color="#E02041"></FiLogIn>
-                        Não tenho cadastro
-                    </Link>
-                        <Link className="back-link" to="/Menu">
-                            <FiLogIn size={16} color="#E02041"></FiLogIn>
-                        Menu
-                    </Link>
+                            Não tenho cadastro
+                        </Link>
                     </form>
                 </section>
                 <img src={ongImg} alt="ong controll"></img>

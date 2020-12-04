@@ -71,8 +71,8 @@ const renderCard = (card, index) => {
     return (
         <div>
             <Header></Header>
-			<b style={{color: 'black'}}>Amiguinhos à procura de ajuda</b>
-			<p style={{color: 'black'}}>Faça uma adoção consciente, dê um lar para um novo amiguinho, basta entrar em contato com a ONG que está abrigando o animal, ou se não, ajude outra Ong com doações de mantimentos!! </p>
+			<b style={{color: 'black', marginLeft: '10px'}}>Amiguinhos à procura de ajuda</b>
+			<p style={{color: 'black', marginLeft: '10px'}}>Faça uma adoção consciente, dê um lar para um novo amiguinho, basta entrar em contato com a ONG que está abrigando o animal, ou se não, ajude outra Ong com doações de mantimentos!! </p>
 			<div className="grid">
 				{cardInfo.map(renderCard)}
 			</div>

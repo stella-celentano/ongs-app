@@ -9,7 +9,9 @@
 }
 
 .alignRigthBtn {
+    margin: 1% auto;
+
     display: flex;
-    margin-top: 1%;
+    justify-content: end;
     margin-right: 9.5%;
 }
