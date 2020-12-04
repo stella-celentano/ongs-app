@@ -25,9 +25,9 @@ export default function Header() {
                     src={logoImg}
                     width="30"
                     height="30"
-                    className="d-inline-block align-top"
+                    className="d-inline-block"
                 />{' '}
-                <b>Ong's Control</b>
+                <b className=" align-top">Ong's Control</b>
             </Navbar.Brand>
             <Navbar.Brand className="textLink" href="/profile">
                 Perfil
