@@ -1,11 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Card, Badge, Accordion, Table, Form, Row, Col } from 'react-bootstrap';
 
+import api from '../services/api';
 import '../styles/components/ManageProfile.css';
 
 import HeaderAdmin from './../components/HeaderAdmin';
 
-export default function ManageProfile() {
+function ManageProfile() {
+    const name = localStorage.getItem('userName');
+    const ongId = localStorage.getItem('loginId');
+    // const [ongData, setOngData] = useState('');
+    const [getOngData, setOngData] = useState('');
+
+    async function handleOngData(e){
+        e.preventDefault();
+
+        try{
+            const Ongdata = await api.post('/ongs/getOngData', {"ongId" : ongId});
+            alert(Ongdata.data.id)
+            if(!Ongdata){
+                alert("Erro ao carregar dados");
+                return;
+            }
+            setOngData(Ongdata.data);
+        }catch(err){
+            alert('Falha no login, tente novamente! ' + err);
+        }
+    }
+
+    // try{
+    //     setOngData(api.get('/ongs', { "id" : ongId}));
+    // }catch(err){
+    //     alert(err);
+    // }
+
     return (
         <div>
             <HeaderAdmin />
@@ -13,9 +41,9 @@ export default function ManageProfile() {
                 <Card style={{ width: '35rem' }}>
                     <Card.Img style={{ width: '10rem' }} className="profileImage" variant="top" src="https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg" />
                     <Card.Body>
-                        <Card.Title className="mb-2 text-muted">Ong amor e compaixao<Badge variant="secondary">Novo Usuário</Badge></Card.Title>
+                        <Card.Title className="mb-2 text-muted">{name} <Badge variant="secondary">Novo Usuário</Badge></Card.Title>
                         <Card.Text className="mb-2 text-muted">
-                            **descrição da ong** Cuidamos do seu periquito belga, consectetur adipiscing elit. Nunc scelerisque et lacus sit amet facilisis. Curabitur in odio quis quam consequat consequat eu ac orci.
+                            {/* {getOngData.data.id} */}
                         </Card.Text>
                         <Accordion>
                             <Card>
@@ -108,3 +136,5 @@ export default function ManageProfile() {
         </div>
     )
 }
+
+export default ManageProfile;

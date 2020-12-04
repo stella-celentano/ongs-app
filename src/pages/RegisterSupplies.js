@@ -76,6 +76,7 @@ export default function RegisterSupplies() {
                             <input
                                 placeholder="Quantidade"
                                 required
+                                type="number"
                                 value={quantidade}
                                 onChange={e => setQuantidade(e.target.value)}
                             />
@@ -83,6 +84,7 @@ export default function RegisterSupplies() {
                             <input
                                 placeholder="Valor da Compra"
                                 required
+                                type="number"
                                 value={valorTotal}
                                 onChange={e => setValorTotal(e.target.value)}
                             />

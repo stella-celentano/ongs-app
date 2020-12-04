@@ -41,7 +41,7 @@ export default function Header() {
             <Navbar.Collapse className="justify-content-end">
                 <Navbar.Text className="user">
                     <b>{userName}</b> {''}
-                    <Link onClick={handleLogout}>
+                    <Link to="/" onClick={handleLogout}>
                         <FiLogIn size={20} color="black"></FiLogIn>
                     </Link>
                 </Navbar.Text>

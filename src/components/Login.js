@@ -19,10 +19,15 @@ function Login() {
         e.preventDefault();
 
         try {
-            const response = await api.post('/', { email, senha });
-
-            localStorage.setItem('loginId', response.data.id_cliente);
-            localStorage.setItem('userName', response.data.nome);
+            const loginResponse = await api.post('/ongs/login', { "emailRequest" : email, "passwordRequest" : senha });
+            alert(loginResponse.data.id);
+            if(!loginResponse){
+                alert("Usuário não encontrado");
+                return;
+            }
+            
+            localStorage.setItem('loginId', loginResponse.data.id);
+            localStorage.setItem('userName', loginResponse.data.nome);
 
             history.push('/profile');
         } catch (err) {
